@@ -2,126 +2,171 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auspify Task-2 Portfolio</title>
-    <link rel="stylesheet" href="./dist/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auspify Task-2 Portfolio</title>
+  <link rel="stylesheet" href="./dist/style.css">
 </head>
 
 <body class="font-body text-ink antialiased">
 
-    <!-- Header Section -->
-    <header class="fixed top-0 inset-x-0 z-50 bg-surface/90 backdrop-blur border-b border-line">
-        <div class="max-w-6xl mx-auto px-5 sm:px-8">
-            <div class="h-16 flex items-center justify-between">
-                <a href="#home" class="flex items-center gap-2 font-display font-bold text-ink">
-                    <span class="w-2.5 h-2.5 rounded-full bg-client"></span>
-                    Arman<span class="text-muted font-normal">.dev</span>
-                </a>
-
-                <nav class="hidden md:flex items-center gap-8 font-mono text-[13px] text-muted">
-                    <a href="#home" class="tab-underline pb-5 -mb-5">HOME</a>
-                    <a href="#about" class="tab-underline hover:text-ink transition-colors pb-5 -mb-5">ABOUT</a>
-                    <a href="#skills" class="tab-underline hover:text-ink transition-colors pb-5 -mb-5">STACK</a>
-                    <a href="#projects" class="tab-underline hover:text-ink transition-colors pb-5 -mb-5">PROJECTS</a>
-                    <a href="#contact" class="tab-underline hover:text-ink transition-colors pb-5 -mb-5">CONTACT</a>
-                </nav>
-
-                <a href="#contact"
-                    class="hidden md:inline-flex items-center gap-2 font-mono text-[13px] bg-ink text-white px-4 py-2 rounded-lg hover:bg-client transition-colors">
-                    Let's talk
-                </a>
-
-                <button id="menu-btn" aria-label="Toggle menu" aria-expanded="false" class="md:hidden text-ink">
-                    <svg id="icon-open" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                        stroke-width="1.5">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5" />
-                    </svg>
-                    <svg id="icon-close" class="w-6 h-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                        stroke-width="1.5">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                    </svg>
-                </button>
-            </div>
-        </div>
-
-        <div id="mobile-menu" class="md:hidden hidden border-t border-line bg-surface">
-            <nav class="flex flex-col font-mono text-[13px] text-muted">
-                <a href="#home" class="px-6 py-4 border-b border-line hover:text-ink">HOME</a>
-                <a href="#about" class="px-6 py-4 border-b border-line hover:text-ink">ABOUT</a>
-                <a href="#skills" class="px-6 py-4 border-b border-line hover:text-ink">STACK</a>
-                <a href="#projects" class="px-6 py-4 border-b border-line hover:text-ink">PROJECTS/</a>
-                <a href="#contact" class="px-6 py-4 hover:text-ink">CONTACT</a>
-            </nav>
-        </div>
-    </header>
-
-    <!-- ============ HERO ============ -->
-<section id="home" class="pt-32 pb-20 sm:pt-40 sm:pb-28">
-  <div class="max-w-6xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-16 items-center">
-
-    <div>
-      <p class="fade-up inline-flex items-center gap-2 font-mono text-xs text-muted bg-surface border border-line px-3 py-1.5 rounded-full mb-6">
-        <span class="w-1.5 h-1.5 rounded-full bg-server"></span>
-        Available for freelance work
-      </p>
-
-      <h1 class="fade-up font-display font-extrabold text-4xl sm:text-5xl lg:text-6xl leading-[1.08] text-ink">
-        Arman Islam,<br />
-        <span class="text-client">Full&nbsp;Stack</span> Developer
-      </h1>
-
-      <p class="fade-up mt-6 text-lg text-muted leading-relaxed max-w-lg">
-        Self-taught developer from Bangladesh, building complete products end to end —
-        React on the client, Django &amp; DRF on the server, shipped and deployed myself.
-      </p>
-
-      <div class="fade-up mt-9 flex flex-wrap gap-4">
-        <a href="#projects" class="inline-flex items-center gap-2 bg-ink text-white px-6 py-3 rounded-lg font-medium hover:bg-client transition-colors">
-          View Projects
+  <!-- Header Section -->
+  <header class="fixed top-0 inset-x-0 z-50 bg-surface/90 backdrop-blur border-b border-line">
+    <div class="max-w-6xl mx-auto px-5 sm:px-8">
+      <div class="h-16 flex items-center justify-between">
+        <a href="#home" class="flex items-center gap-2 font-display font-bold text-ink">
+          <span class="w-2.5 h-2.5 rounded-full bg-client"></span>
+          Arman<span class="text-muted font-normal">.dev</span>
         </a>
-        <a href="#contact" class="inline-flex items-center gap-2 border border-line bg-surface px-6 py-3 rounded-lg font-medium text-ink hover:border-client hover:text-client transition-colors">
-          Get in Touch
+
+        <nav class="hidden md:flex items-center gap-8 font-mono text-[13px] text-muted">
+          <a href="#home" class="tab-underline pb-5 -mb-5">HOME</a>
+          <a href="#about" class="tab-underline hover:text-ink transition-colors pb-5 -mb-5">ABOUT</a>
+          <a href="#skills" class="tab-underline hover:text-ink transition-colors pb-5 -mb-5">STACK</a>
+          <a href="#projects" class="tab-underline hover:text-ink transition-colors pb-5 -mb-5">PROJECTS</a>
+          <a href="#contact" class="tab-underline hover:text-ink transition-colors pb-5 -mb-5">CONTACT</a>
+        </nav>
+
+        <a href="#contact"
+          class="hidden md:inline-flex items-center gap-2 font-mono text-[13px] bg-ink text-white px-4 py-2 rounded-lg hover:bg-client transition-colors">
+          Let's talk
         </a>
+
+        <button id="menu-btn" aria-label="Toggle menu" aria-expanded="false" class="md:hidden text-ink">
+          <svg id="icon-open" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5" />
+          </svg>
+          <svg id="icon-close" class="w-6 h-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+            stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+          </svg>
+        </button>
       </div>
     </div>
 
-    <div class="fade-up relative h-90 sm:h-100">
-      <div class="layer absolute inset-x-4 top-0 bg-surface border border-line rounded-2xl shadow-card p-5">
-        <div class="flex items-center justify-between">
-          <span class="font-mono text-[11px] uppercase tracking-widest text-client">Client Layer</span>
-          <span class="w-2 h-2 rounded-full bg-client"></span>
+    <div id="mobile-menu" class="md:hidden hidden border-t border-line bg-surface">
+      <nav class="flex flex-col font-mono text-[13px] text-muted">
+        <a href="#home" class="px-6 py-4 border-b border-line hover:text-ink">HOME</a>
+        <a href="#about" class="px-6 py-4 border-b border-line hover:text-ink">ABOUT</a>
+        <a href="#skills" class="px-6 py-4 border-b border-line hover:text-ink">STACK</a>
+        <a href="#projects" class="px-6 py-4 border-b border-line hover:text-ink">PROJECTS/</a>
+        <a href="#contact" class="px-6 py-4 hover:text-ink">CONTACT</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============ Hero Section ============ -->
+  <section id="home" class="pt-32 pb-20 sm:pt-40 sm:pb-28">
+    <div class="max-w-6xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-16 items-center">
+
+      <div>
+        <p
+          class="fade-up inline-flex items-center gap-2 font-mono text-xs text-muted bg-surface border border-line px-3 py-1.5 rounded-full mb-6">
+          <span class="w-1.5 h-1.5 rounded-full bg-server"></span>
+          Available for freelance work
+        </p>
+
+        <h1 class="fade-up font-display font-extrabold text-4xl sm:text-5xl lg:text-6xl leading-[1.08] text-ink">
+          Arman Islam,<br />
+          <span class="text-client">Full&nbsp;Stack</span> Developer
+        </h1>
+
+        <p class="fade-up mt-6 text-lg text-muted leading-relaxed max-w-lg">
+          Self-taught developer from Bangladesh, building complete products end to end —
+          React on the client, Django &amp; DRF on the server, shipped and deployed myself.
+        </p>
+
+        <div class="fade-up mt-9 flex flex-wrap gap-4">
+          <a href="#projects"
+            class="inline-flex items-center gap-2 bg-ink text-white px-6 py-3 rounded-lg font-medium hover:bg-client transition-colors">
+            View Projects
+          </a>
+          <a href="#contact"
+            class="inline-flex items-center gap-2 border border-line bg-surface px-6 py-3 rounded-lg font-medium text-ink hover:border-client hover:text-client transition-colors">
+            Get in Touch
+          </a>
         </div>
-        <p class="mt-3 font-display font-semibold text-ink">React · JavaScript</p>
-        <p class="mt-1 text-sm text-muted">Tailwind CSS · Responsive UI</p>
       </div>
 
-      <div class="layer absolute inset-x-8 top-30 bg-surface border border-line rounded-2xl shadow-card p-5">
-        <div class="flex items-center justify-between">
-          <span class="font-mono text-[11px] uppercase tracking-widest text-ink/60">Application Layer</span>
-          <span class="w-2 h-2 rounded-full bg-ink/40"></span>
+      <div class="fade-up relative h-90 sm:h-100">
+        <div class="layer absolute inset-x-4 top-0 bg-surface border border-line rounded-2xl shadow-card p-5">
+          <div class="flex items-center justify-between">
+            <span class="font-mono text-[11px] uppercase tracking-widest text-client">Client Layer</span>
+            <span class="w-2 h-2 rounded-full bg-client"></span>
+          </div>
+          <p class="mt-3 font-display font-semibold text-ink">React · JavaScript</p>
+          <p class="mt-1 text-sm text-muted">Tailwind CSS · Responsive UI</p>
         </div>
-        <p class="mt-3 font-display font-semibold text-ink">Django · REST Framework</p>
-        <p class="mt-1 text-sm text-muted">APIs · Auth · Business logic</p>
+
+        <div class="layer absolute inset-x-8 top-30 bg-surface border border-line rounded-2xl shadow-card p-5">
+          <div class="flex items-center justify-between">
+            <span class="font-mono text-[11px] uppercase tracking-widest text-ink/60">Application Layer</span>
+            <span class="w-2 h-2 rounded-full bg-ink/40"></span>
+          </div>
+          <p class="mt-3 font-display font-semibold text-ink">Django · REST Framework</p>
+          <p class="mt-1 text-sm text-muted">APIs · Auth · Business logic</p>
+        </div>
+
+        <div class="layer absolute inset-x-12 top-60 bg-surface border border-line rounded-2xl shadow-card p-5">
+          <div class="flex items-center justify-between">
+            <span class="font-mono text-[11px] uppercase tracking-widest text-server">Deployment</span>
+            <span class="w-2 h-2 rounded-full bg-server"></span>
+          </div>
+          <p class="mt-3 font-display font-semibold text-ink">Git · GitHub</p>
+          <p class="mt-1 text-sm text-muted">Version control · Shipping</p>
+        </div>
       </div>
 
-      <div class="layer absolute inset-x-12 top-60 bg-surface border border-line rounded-2xl shadow-card p-5">
-        <div class="flex items-center justify-between">
-          <span class="font-mono text-[11px] uppercase tracking-widest text-server">Deployment</span>
-          <span class="w-2 h-2 rounded-full bg-server"></span>
+    </div>
+  </section>
+
+  <!-- ============ About Section ============ -->
+  <section id="about" class="bg-surface border-y border-line py-20 sm:py-24">
+    <div class="max-w-6xl mx-auto px-5 sm:px-8 grid md:grid-cols-12 gap-12">
+      <div class="md:col-span-4 fade-up">
+        <p class="font-mono text-xs text-muted mb-2">01</p>
+        <h2 class="font-display font-bold text-3xl text-ink">About</h2>
+      </div>
+
+      <div class="md:col-span-8 fade-up">
+        <p class="text-lg leading-relaxed text-ink/80">
+          I'm a passionate Web Developer from Bangladesh, completing NTVQF Level 4 Web Application Development with
+          Python under NSDA. I specialize in full-stack apps with Django, Bootstrap, and REST APIs.
+
+          Alongside development, I'm pursuing a TVET Trainer career — completing CBT&A Level 4 and applying for trainer
+          positions under NSDA/NTVQF standards.
+
+          I believe in learning by building. Every project is a chance to grow and inspire the next generation of
+          developers.
+        </p>
+        <p class="mt-5 text-lg leading-relaxed text-ink/80">
+          Today that means React or plain JavaScript with Tailwind on the front end,
+          Python with Django and Django REST Framework on the back end, and Git for
+          everything in between — comfortable taking a project from an empty folder
+          to a deployed, working product.
+        </p>
+
+        <div class="mt-10 grid grid-cols-3 gap-6 max-w-md">
+          <div>
+            <p class="font-display font-bold text-2xl text-ink">3+</p>
+            <p class="text-xs text-muted mt-1">Portfolio builds</p>
+          </div>
+          <div>
+            <p class="font-display font-bold text-2xl text-ink">2</p>
+            <p class="text-xs text-muted mt-1">Layers I own</p>
+          </div>
+          <div>
+            <p class="font-display font-bold text-2xl text-ink">BD</p>
+            <p class="text-xs text-muted mt-1">Based in</p>
+          </div>
         </div>
-        <p class="mt-3 font-display font-semibold text-ink">Git · GitHub</p>
-        <p class="mt-1 text-sm text-muted">Version control · Shipping</p>
       </div>
     </div>
-
-  </div>
-</section>
+  </section>
 
 
 
-    <script src="./dist/script.js"></script>
+  <script src="./dist/script.js"></script>
 
 </body>
 
