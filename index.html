@@ -204,6 +204,131 @@
   </div>
 </section>
 
+<!-- ============ PROJECTS ============ -->
+<section id="projects" class="bg-surface border-y border-line py-20 sm:py-24">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8">
+    <div class="flex items-baseline gap-3 mb-14 fade-up">
+      <p class="font-mono text-xs text-muted">03</p>
+      <h2 class="font-display font-bold text-3xl text-ink">Projects</h2>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6">
+
+      <article class="fade-up group border border-line rounded-2xl overflow-hidden hover:border-client transition-colors">
+        <div class="p-6 border-b border-line flex items-center justify-between">
+          <span class="font-mono text-[11px] text-muted">01</span>
+          <span class="font-mono text-[11px] text-server">Live</span>
+        </div>
+        <div class="p-6">
+          <h3 class="font-display font-semibold text-lg text-ink">Portfolio Website</h3>
+          <p class="mt-2 text-sm text-muted leading-relaxed">
+            Rebuilt across three iterations — vanilla HTML/CSS/JS, then React +
+            Tailwind, now a single-file Tailwind + JS build.
+          </p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="font-mono text-[11px] px-2 py-1 bg-canvas rounded text-ink/70">HTML</span>
+            <span class="font-mono text-[11px] px-2 py-1 bg-canvas rounded text-ink/70">Tailwind</span>
+            <span class="font-mono text-[11px] px-2 py-1 bg-canvas rounded text-ink/70">JS</span>
+          </div>
+          <a href="https://armanislam3307.netlify.app/" target="_blank" rel="noopener" class="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-client hover:underline">
+            View live ↗
+          </a>
+        </div>
+      </article>
+
+      <article class="fade-up group border border-line rounded-2xl overflow-hidden hover:border-client transition-colors">
+        <div class="p-6 border-b border-line flex items-center justify-between">
+          <span class="font-mono text-[11px] text-muted">02</span>
+          <span class="font-mono text-[11px] text-server">Live</span>
+        </div>
+        <div class="p-6">
+          <h3 class="font-display font-semibold text-lg text-ink">Borga Bondhu</h3>
+          <p class="mt-2 text-sm text-muted leading-relaxed">
+           A Django web app that connects farmers directly with buyers, cutting out middlemen (paikars).
+          </p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="font-mono text-[11px] px-2 py-1 bg-canvas rounded text-ink/70">Django</span>
+            <span class="font-mono text-[11px] px-2 py-1 bg-canvas rounded text-ink/70">Bootstrap</span>
+            <span class="font-mono text-[11px] px-2 py-1 bg-canvas rounded text-ink/70">SQLite</span>
+            <span class="font-mono text-[11px] px-2 py-1 bg-canvas rounded text-ink/70">Chart.js</span>
+          </div>
+          <a href="https://armanislam3307.pythonanywhere.com/" target="_blank" rel="noopener" class="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-client hover:underline">
+            View live ↗
+          </a>
+        </div>
+      </article>
+
+      <article class="fade-up group border border-line rounded-2xl overflow-hidden hover:border-client transition-colors">
+        <div class="p-6 border-b border-line flex items-center justify-between">
+          <span class="font-mono text-[11px] text-muted">03</span>
+          <span class="font-mono text-[11px] text-server">Live</span>
+        </div>
+        <div class="p-6">
+          <h3 class="font-display font-semibold text-lg text-ink">Django Scaffold Script</h3>
+          <p class="mt-2 text-sm text-muted leading-relaxed">
+            Bash + PowerShell scaffolding script that spins up new Django projects
+            fast — tested across Termux, ACode and Git Bash.
+          </p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="font-mono text-[11px] px-2 py-1 bg-canvas rounded text-ink/70">Bash</span>
+            <span class="font-mono text-[11px] px-2 py-1 bg-canvas rounded text-ink/70">PowerShell</span>
+            <span class="font-mono text-[11px] px-2 py-1 bg-canvas rounded text-ink/70">Django</span>
+          </div>
+          <a href="https://github.com/ArmanIslam3307" target="_blank" rel="noopener" class="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-client hover:underline">
+            View on GitHub ↗
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="py-20 sm:py-24">
+  <div class="max-w-2xl mx-auto px-5 sm:px-8">
+    <div class="flex items-baseline gap-3 mb-3 fade-up">
+      <p class="font-mono text-xs text-muted">04</p>
+      <h2 class="font-display font-bold text-3xl text-ink">Contact</h2>
+    </div>
+    <p class="fade-up text-muted mb-10">Have a project in mind? Send a few details and I'll get back to you.</p>
+
+    <form id="contact-form" class="fade-up bg-surface border border-line rounded-2xl p-6 sm:p-8" novalidate>
+      <div class="grid sm:grid-cols-2 gap-5">
+        <div>
+          <label for="name" class="block text-sm font-medium text-ink mb-2">Name</label>
+          <input id="name" name="name" type="text" required
+            class="w-full border border-line rounded-lg px-4 py-3 text-ink placeholder-muted/60 focus:border-client outline-none transition-colors"
+            placeholder="Your name" />
+          <p class="error-msg hidden text-red-500 text-xs mt-1"></p>
+        </div>
+        <div>
+          <label for="email" class="block text-sm font-medium text-ink mb-2">Email</label>
+          <input id="email" name="email" type="email" required
+            class="w-full border border-line rounded-lg px-4 py-3 text-ink placeholder-muted/60 focus:border-client outline-none transition-colors"
+            placeholder="you@example.com" />
+          <p class="error-msg hidden text-red-500 text-xs mt-1"></p>
+        </div>
+      </div>
+
+      <div class="mt-5">
+        <label for="message" class="block text-sm font-medium text-ink mb-2">Message</label>
+        <textarea id="message" name="message" rows="5" required
+          class="w-full border border-line rounded-lg px-4 py-3 text-ink placeholder-muted/60 focus:border-client outline-none transition-colors resize-none"
+          placeholder="What are you looking to build?"></textarea>
+        <p class="error-msg hidden text-red-500 text-xs mt-1"></p>
+      </div>
+
+      <button type="submit" id="submit-btn"
+        class="mt-7 w-full sm:w-auto bg-ink text-white px-8 py-3 rounded-lg font-medium hover:bg-client transition-colors">
+        Send Message
+      </button>
+
+      <p id="form-status" class="mt-4 text-sm hidden"></p>
+    </form>
+  </div>
+</section>
+
 
 
 <!-- ============ Footer Section ============ -->
